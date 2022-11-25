@@ -84,6 +84,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent AboutMeActivity = new Intent(MainActivity.this, AboutMeActivity.class);
                 startActivity(AboutMeActivity);
                 return true;
+            case R.id.add_button:
+                Intent CreateRoomActivity = new Intent(MainActivity.this, CreateRoomActivity.class);
+                startActivity(CreateRoomActivity);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
