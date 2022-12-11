@@ -1,3 +1,6 @@
+/**
+ * Class yang berisi Voucher
+ */
 package com.MuhammadNajihAflahJSleepKM.model;
 
 public class Voucher extends Serializable {

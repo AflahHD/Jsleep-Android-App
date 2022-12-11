@@ -2,11 +2,14 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailroom"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#03A9F4"
     tools:context=".DetailRoomActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="347dp"
         android:layout_height="452dp"
         android:layout_marginStart="30dp"
@@ -23,6 +26,7 @@
             android:layout_marginStart="28dp"
             android:layout_marginTop="16dp"
             android:text="Detail Room"
+            android:textColor="#000000"
             android:textSize="21sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -35,6 +39,7 @@
             android:layout_marginStart="21dp"
             android:layout_marginTop="27dp"
             android:text="Name"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -45,6 +50,7 @@
             android:layout_marginStart="21dp"
             android:layout_marginTop="17dp"
             android:text="Bed type"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -55,6 +61,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="17dp"
             android:text="Size"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -65,6 +72,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="17dp"
             android:text="Price"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -75,6 +83,7 @@
             android:layout_marginStart="21dp"
             android:layout_marginTop="17dp"
             android:text="Address"
+            android:textColor="#000000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -91,7 +100,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
         <CheckBox
-            android:id="@+id/AcCheck"
+            android:id="@+id/AcCheck2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="33dp"
@@ -101,117 +110,144 @@
             app:layout_constraintTop_toBottomOf="@+id/facility2" />
 
         <CheckBox
-            android:id="@+id/BathtubCheck"
+            android:id="@+id/BathtubCheck2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="34dp"
             android:text="Bathttub"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/AcCheck" />
+            app:layout_constraintTop_toBottomOf="@+id/AcCheck2" />
 
         <CheckBox
-            android:id="@+id/PoolCheck"
+            android:id="@+id/PoolCheck2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="34dp"
             android:text="SwimmingPool"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/BathtubCheck" />
+            app:layout_constraintTop_toBottomOf="@+id/BathtubCheck2" />
 
         <CheckBox
-            android:id="@+id/refrigeratorCheck"
+            android:id="@+id/refrigeratorCheck2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
-            android:text="CheckBox"
-            app:layout_constraintStart_toEndOf="@+id/AcCheck"
+            android:text="refrigerator"
+            app:layout_constraintStart_toEndOf="@+id/AcCheck2"
             app:layout_constraintTop_toBottomOf="@+id/facility2" />
 
         <CheckBox
-            android:id="@+id/balconyCheck"
+            android:id="@+id/balconyCheck2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Balcony"
-            app:layout_constraintBottom_toTopOf="@+id/PoolCheck"
-            app:layout_constraintEnd_toStartOf="@+id/restaurantCheck"
-            app:layout_constraintStart_toEndOf="@+id/BathtubCheck"
-            app:layout_constraintTop_toBottomOf="@+id/refrigeratorCheck"
+            app:layout_constraintBottom_toTopOf="@+id/PoolCheck2"
+            app:layout_constraintEnd_toStartOf="@+id/restaurantCheck2"
+            app:layout_constraintStart_toEndOf="@+id/BathtubCheck2"
+            app:layout_constraintTop_toBottomOf="@+id/refrigeratorCheck2"
             app:layout_constraintVertical_bias="1.0" />
 
         <CheckBox
-            android:id="@+id/fitnessCheck"
+            android:id="@+id/fitnessCheck2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Fitness Center"
-            app:layout_constraintStart_toEndOf="@+id/PoolCheck"
-            app:layout_constraintTop_toBottomOf="@+id/balconyCheck" />
+            app:layout_constraintStart_toEndOf="@+id/PoolCheck2"
+            app:layout_constraintTop_toBottomOf="@+id/balconyCheck2" />
 
         <CheckBox
-            android:id="@+id/wifiCheck"
+            android:id="@+id/wifiCheck2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="291dp"
             android:text="Wifi"
-            app:layout_constraintStart_toEndOf="@+id/refrigeratorCheck"
+            app:layout_constraintStart_toEndOf="@+id/refrigeratorCheck2"
             app:layout_constraintTop_toTopOf="parent" />
 
         <CheckBox
-            android:id="@+id/restaurantCheck"
+            android:id="@+id/restaurantCheck2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Restaurant"
-            app:layout_constraintStart_toEndOf="@+id/balconyCheck"
-            app:layout_constraintTop_toBottomOf="@+id/wifiCheck" />
+            app:layout_constraintStart_toEndOf="@+id/balconyCheck2"
+            app:layout_constraintTop_toBottomOf="@+id/wifiCheck2" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/nameDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="118dp"
             android:layout_marginTop="71dp"
             android:text="TextView"
+            android:textColor="#000000"
             app:layout_constraintStart_toEndOf="@+id/textView12"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/typeDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
             android:layout_marginTop="18dp"
             android:text="TextView"
+            android:textColor="#000000"
             app:layout_constraintStart_toEndOf="@+id/textView13"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/nameDetail" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/sizeDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="129dp"
             android:layout_marginTop="17dp"
             android:text="TextView"
+            android:textColor="#000000"
             app:layout_constraintStart_toEndOf="@+id/textView14"
-            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            app:layout_constraintTop_toBottomOf="@+id/typeDetail" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/priceDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="123dp"
             android:layout_marginTop="17dp"
             android:text="TextView"
+            android:textColor="#000000"
             app:layout_constraintStart_toEndOf="@+id/textView15"
-            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            app:layout_constraintTop_toBottomOf="@+id/sizeDetail" />
 
         <TextView
-            android:id="@+id/textView10"
+            android:id="@+id/addressDetail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="103dp"
             android:layout_marginTop="17dp"
             android:text="TextView"
+            android:textColor="#000000"
             app:layout_constraintStart_toEndOf="@+id/textView16"
-            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            app:layout_constraintTop_toBottomOf="@+id/priceDetail" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/bookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF5722"
+        android:text="Book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/cancelbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FF5722"
+        android:text="cancel"
+        app:layout_constraintStart_toEndOf="@+id/bookButton"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

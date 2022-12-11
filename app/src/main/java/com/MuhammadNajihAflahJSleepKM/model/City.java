@@ -1,3 +1,6 @@
+/**
+ * Class yang berisi City
+ */
 package com.MuhammadNajihAflahJSleepKM.model;
 
 public enum City

@@ -1,7 +1,10 @@
+/**
+ * Class yang berisi Facility
+ */
 package com.MuhammadNajihAflahJSleepKM.model;
 
 public enum Facility
 {
-    Wifi, Bathtub, Balcony, AC, FitnessCenter,
+    WiFi, Bathtub, Balcony, AC, FitnessCenter,
     Refrigerator, Restaurant, SwimmingPool
 }

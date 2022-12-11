@@ -2,8 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createroom"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#03A9F4">
 
     <TextView
         android:id="@+id/textView3"
@@ -12,6 +14,7 @@
         android:layout_marginStart="43dp"
         android:layout_marginTop="10dp"
         android:text="Create Room"
+        android:textColor="#000000"
         android:textSize="21sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,6 +27,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
         android:text="Facility"
+        android:textColor="#000000"
         android:textSize="21sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +82,7 @@
         app:layout_constraintTop_toBottomOf="@+id/addressCreateRoom" />
 
     <CheckBox
-        android:id="@+id/AcCheck"
+        android:id="@+id/AcCheck2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -88,85 +92,84 @@
         app:layout_constraintTop_toBottomOf="@+id/facility" />
 
     <CheckBox
-        android:id="@+id/BathtubCheck"
+        android:id="@+id/BathtubCheck2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
-        android:text="Bathttub"
+        android:text="Bathtub"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AcCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/AcCheck2" />
 
     <CheckBox
-        android:id="@+id/PoolCheck"
+        android:id="@+id/PoolCheck2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:text="SwimmingPool"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BathtubCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/BathtubCheck2" />
 
     <CheckBox
-        android:id="@+id/refrigeratorCheck"
+        android:id="@+id/refrigeratorCheck2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        android:text="CheckBox"
-        app:layout_constraintStart_toEndOf="@+id/AcCheck"
+        android:text="Refrigerator"
+        app:layout_constraintStart_toEndOf="@+id/AcCheck2"
         app:layout_constraintTop_toBottomOf="@+id/facility" />
 
     <CheckBox
-        android:id="@+id/balconyCheck"
+        android:id="@+id/balconyCheck2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Balcony"
-        app:layout_constraintBottom_toTopOf="@+id/PoolCheck"
-        app:layout_constraintEnd_toStartOf="@+id/restaurantCheck"
-        app:layout_constraintStart_toEndOf="@+id/BathtubCheck"
-        app:layout_constraintTop_toBottomOf="@+id/refrigeratorCheck" />
+        app:layout_constraintBottom_toTopOf="@+id/PoolCheck2"
+        app:layout_constraintEnd_toStartOf="@+id/restaurantCheck2"
+        app:layout_constraintStart_toEndOf="@+id/BathtubCheck2"
+        app:layout_constraintTop_toBottomOf="@+id/refrigeratorCheck2" />
 
     <CheckBox
-        android:id="@+id/fitnessCheck"
+        android:id="@+id/fitnessCheck2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fitness Center"
-        app:layout_constraintStart_toEndOf="@+id/PoolCheck"
-        app:layout_constraintTop_toBottomOf="@+id/balconyCheck" />
+        app:layout_constraintStart_toEndOf="@+id/PoolCheck2"
+        app:layout_constraintTop_toBottomOf="@+id/balconyCheck2" />
 
     <CheckBox
-        android:id="@+id/wifiCheck"
+        android:id="@+id/wifiCheck2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="45dp"
         android:text="Wifi"
-        app:layout_constraintBottom_toTopOf="@+id/restaurantCheck"
-        app:layout_constraintStart_toEndOf="@+id/refrigeratorCheck"
+        app:layout_constraintStart_toEndOf="@+id/refrigeratorCheck2"
         app:layout_constraintTop_toBottomOf="@+id/sizeCreateRoom" />
 
     <CheckBox
-        android:id="@+id/restaurantCheck"
+        android:id="@+id/restaurantCheck2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Restaurant"
-        app:layout_constraintStart_toEndOf="@+id/balconyCheck"
-        app:layout_constraintTop_toBottomOf="@+id/wifiCheck" />
+        app:layout_constraintStart_toEndOf="@+id/balconyCheck2"
+        app:layout_constraintTop_toBottomOf="@+id/wifiCheck2" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/citySpinner"
         android:layout_width="133dp"
         android:layout_height="28dp"
         android:layout_marginStart="143dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/fitnessCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/fitnessCheck2" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/bedSpinner"
         android:layout_width="133dp"
         android:layout_height="28dp"
         android:layout_marginStart="109dp"
         android:layout_marginTop="7dp"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/citySpinner" />
 
     <TextView
         android:id="@+id/textView5"
@@ -176,7 +179,7 @@
         android:layout_marginTop="10dp"
         android:text="City"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PoolCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/PoolCheck2" />
 
     <TextView
         android:id="@+id/textView6"
@@ -189,23 +192,25 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/CreateRoom"
+        android:id="@+id/createButton"
         android:layout_width="144dp"
         android:layout_height="47dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#FF5722"
         android:text="Create"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <Button
-        android:id="@+id/cancelRoom"
+        android:id="@+id/cancelButton"
         android:layout_width="144dp"
         android:layout_height="47dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
+        android:backgroundTint="#FF5722"
         android:text="Cancel"
-        app:layout_constraintStart_toEndOf="@+id/CreateRoom"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+        app:layout_constraintStart_toEndOf="@+id/createButton"
+        app:layout_constraintTop_toBottomOf="@+id/bedSpinner" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

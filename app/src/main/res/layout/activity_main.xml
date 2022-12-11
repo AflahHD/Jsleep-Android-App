@@ -2,42 +2,50 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#03A9F4"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/prev"
+        android:id="@+id/prevButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="35dp"
+        android:backgroundTint="#FF5722"
         android:text="PREV"
+        android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/next"
+        android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="13dp"
         android:layout_marginTop="35dp"
+        android:backgroundTint="#FF5722"
         android:text="NEXT"
-        app:layout_constraintStart_toEndOf="@+id/prev"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/prevButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/go"
+        android:id="@+id/goButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:layout_marginEnd="16dp"
+        android:backgroundTint="#FF5722"
         android:text="GO"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/searchMain"
         android:layout_width="56dp"
         android:layout_height="35dp"
         android:layout_marginStart="21dp"
@@ -45,8 +53,8 @@
         android:layout_marginEnd="25dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@+id/go"
-        app:layout_constraintStart_toEndOf="@+id/next"
+        app:layout_constraintEnd_toStartOf="@+id/goButton"
+        app:layout_constraintStart_toEndOf="@+id/nextButton"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
@@ -54,8 +62,11 @@
         android:layout_width="409dp"
         android:layout_height="646dp"
         android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="1dp"
+        android:background="#03A9F4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/prev" />
+        app:layout_constraintTop_toBottomOf="@+id/prevButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,9 @@
+/**
+ * Class yang berisi Invoice
+ */
 package com.MuhammadNajihAflahJSleepKM.model;
 
-public class Invoice {
+public class Invoice extends Serializable {
     public enum RoomRating{
         NONE, BAD, NEUTRAL, GOOD
     }

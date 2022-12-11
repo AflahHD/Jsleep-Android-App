@@ -2,8 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aboutme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#03A9F4"
     tools:context=".AboutMeActivity">
 
 
@@ -51,6 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Account Details"
+        android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -111,6 +114,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="51dp"
+        android:backgroundTint="#FF5722"
         android:text="TOP UP"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -124,8 +128,187 @@
         android:layout_height="51dp"
         android:layout_marginStart="33dp"
         android:layout_marginTop="12dp"
+        android:backgroundTint="#FF5722"
         android:text="REGISTER RENTER"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/amount" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Cardview1"
+        android:layout_width="413dp"
+        android:layout_height="310dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="4dp"
+        android:background="#03A9F4"
+        tools:cardBackgroundColor="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <EditText
+            android:id="@+id/NameAboutme2"
+            android:layout_width="163dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#BB86FC"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.382" />
+
+        <EditText
+            android:id="@+id/addressAboutMe2"
+            android:layout_width="163dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="95dp"
+            android:backgroundTint="#BB86FC"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.382" />
+
+        <EditText
+            android:id="@+id/phoneAboutMe2"
+            android:layout_width="163dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="155dp"
+            android:backgroundTint="#BB86FC"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.382" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="220dp"
+            android:backgroundTint="#3F51B5"
+            android:text="REGISTER"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.382" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="220dp"
+            android:backgroundTint="#3F51B5"
+            android:text="CANCEL"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.162"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.382" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Cardview2"
+        android:layout_width="413dp"
+        android:layout_height="310dp"
+        android:layout_gravity="center"
+        android:background="#03A9F4"
+        app:cardBackgroundColor="#03A9F4"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:cardBackgroundColor="#03A9F4">
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="45dp"
+            android:text="Name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="90dp"
+            android:text="Address"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="135dp"
+            android:text="Phone Number"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/nameText2"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginRight="45dp"
+            android:gravity="end"
+            android:text="Name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="45dp"
+            android:gravity="end"
+            android:text="Address"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/phoneText"
+            android:layout_width="189dp"
+            android:layout_height="27dp"
+            android:layout_gravity="end"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginRight="45dp"
+            android:gravity="end"
+            android:text="Phone Number"
+            android:textSize="14sp" />
+
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

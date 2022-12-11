@@ -1,3 +1,6 @@
+/**
+ * Class yang berisi activity dari Register
+ */
 package com.MuhammadNajihAflahJSleepKM;
 
 import android.content.Context;
@@ -24,6 +27,10 @@ public class RegisterActivity extends AppCompatActivity {
     EditText name,email,password;
     Context mContext;
 
+    /**
+     * Method saat tombol Register now diklik
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +53,11 @@ public class RegisterActivity extends AppCompatActivity {
 
     protected Account requestRegister(String name, String email, String password) {
         mApiService.register(name,email,password).enqueue(new Callback<Account>() {
+            /**
+             * Method untuk request register
+             * @param call
+             * @param response
+             */
             @Override
             public void onResponse(Call<Account> call, Response<Account> response) {
                 if (response.isSuccessful()) {

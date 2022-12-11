@@ -15,14 +15,7 @@
         android:theme="@style/Theme.Jsleepandroid"
         tools:targetApi="31">
         <activity
-            android:name=".AboutMeActivity3"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".AboutMeActivity2"
+            android:name=".PaymentActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

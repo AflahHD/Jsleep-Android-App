@@ -1,6 +1,7 @@
 package com.MuhammadNajihAflahJSleepKM.request;
 
 import com.MuhammadNajihAflahJSleepKM.model.Account;
+import com.MuhammadNajihAflahJSleepKM.model.BedType;
 import com.MuhammadNajihAflahJSleepKM.model.City;
 import com.MuhammadNajihAflahJSleepKM.model.Facility;
 import com.MuhammadNajihAflahJSleepKM.model.Payment;
@@ -29,12 +30,13 @@ public interface BaseApiService {
                              @Query("password") String password);
 
     @POST("account/{id}/registerRenter")
-    Call<Renter> registerRenter(@Query("username") String username,
+    Call<Renter> registerRenter(@Query("id") int id,
+                                @Query("username") String username,
                                 @Query("address") String address,
                                 @Query("phoneNumber") String phoneNumber);
 
     @POST("account/{id}/topUp")
-    Call<Boolean> topUp(@Path("id") int id, @Query("balance") int balance);
+    Call<Boolean> topUp(@Path("id") int id, @Query("balance") double balance);
 
     //RoomController BaseApi
     @GET("room/{id}")
@@ -50,9 +52,10 @@ public interface BaseApiService {
                            @Query("name") String name,
                            @Query("size") int size,
                            @Query("price") double price,
-                           @Query("facility") Facility facility,
+                           @Query("facility") Facility[] facility,
                            @Query("city") City city,
-                           @Query("address") String address);
+                           @Query("address") String address,
+                           @Query("bedType") BedType bedType);
 
     @GET("voucher/{id}")
     Call<Voucher> getVoucher (@Path("id") int id);
@@ -82,4 +85,8 @@ public interface BaseApiService {
 
     @POST("payment/{id}/cancel")
     Call<Boolean> cancel (@Path("id") int id);
+
+    @GET("room/getAllRoom")
+    Call<List<Room>> getAllRoom(@Query("page") int page, @Query("pageSize") int pageSize);
+
 }

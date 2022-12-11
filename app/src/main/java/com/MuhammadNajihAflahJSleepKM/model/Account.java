@@ -1,3 +1,6 @@
+/**
+ * Class yang berisi account
+ */
 package com.MuhammadNajihAflahJSleepKM.model;
 
 import android.content.Context;

@@ -1,3 +1,6 @@
+/**
+ * Class yang berisi activity dari Login
+ */
 package com.MuhammadNajihAflahJSleepKM;
 
 import android.content.Context;
@@ -26,6 +29,10 @@ public class LoginActivity extends AppCompatActivity {
     EditText email,password;
     Context mContext;
 
+    /**
+     * Method saat aplikasi diklik
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +46,10 @@ public class LoginActivity extends AppCompatActivity {
         TextView mainActivity = findViewById(R.id.LoginButton);
 
         register.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Melakukan intent ke RegisterActivity
+             * @param view
+             */
             @Override
             public void onClick(View view) {
                 Intent move = new Intent(LoginActivity.this, RegisterActivity.class);
@@ -47,6 +58,10 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         mainActivity.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Melakukan intent ke MainActivity
+             * @param view
+             */
             @Override
             public void onClick(View view) {
                 Intent move = new Intent(LoginActivity.this, MainActivity.class);
@@ -55,6 +70,10 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         LoginButton.setOnClickListener(new View.OnClickListener() {
+            /**
+             * Melakukan request account bila tombol login diklik
+             * @param view
+             */
             @Override
             public void onClick(View view) {
                 Account account = requestAccount();
@@ -73,6 +92,11 @@ public class LoginActivity extends AppCompatActivity {
 
     protected Account requestAccount() {
         mApiService.getAccount(0).enqueue(new Callback<Account>() {
+            /**
+             * Method untuk request account
+             * @param call
+             * @param response
+             */
             @Override
             public void onResponse(Call<Account> call, Response<Account> response) {
                 if (response.isSuccessful()) {
@@ -91,6 +115,11 @@ public class LoginActivity extends AppCompatActivity {
 
     protected Account requestLogin(String email, String password) {
         mApiService.login(email,password).enqueue(new Callback<Account>() {
+            /**
+             * Method untuk request login
+             * @param call
+             * @param response
+             */
             @Override
             public void onResponse(Call<Account> call, Response<Account> response) {
                 if (response.isSuccessful()) {

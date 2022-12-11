@@ -1,3 +1,6 @@
+/**
+ * Class yang berisi Payment
+ */
 package com.MuhammadNajihAflahJSleepKM.model;
 
 import java.util.Date;
